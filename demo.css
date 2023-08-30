@@ -1,0 +1,27 @@
+.header{
+    width:100%;
+    background-color: goldenrod;
+    height: 200px;
+}
+.left-section{
+    width:200px;
+    background-color: rgb(32, 144, 218);
+    height: 400px;
+    float:left;
+}
+.right-section{
+    width:200%;
+    background-color: rgb(48, 218, 32);
+    height: 40px;
+    float:left;
+}
+.content{
+    height: 40px;
+    background-color: #000;
+}
+.footer{
+    width:150%;
+    background-color: rgb(218, 32, 72);
+    height: 100%;
+}
+

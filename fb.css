@@ -1,0 +1,14 @@
+.header{
+    width:100%;
+    height:150px;
+    background-color: blueviolet;
+}
+body{margin: 0;
+}
+.logo{
+    width: 50%;
+
+}
+.login{
+    width: 50%;
+}

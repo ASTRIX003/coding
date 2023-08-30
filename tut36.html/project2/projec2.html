@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      #navbar {
+        display: flex;
+        align-items: center;
+        margin-top: 0px;
+        background-color: #32a846;
+        height: 150px;
+      }
+      #logo img {
+        height: 154px;
+      }
+
+      #navbar ul {
+        display: flex;
+        padding-top: 20px;
+      }
+      #navbar ul li {
+        list-style: none;
+      }
+      #navbar ul li a {
+        display: block;
+        text-decoration: none;
+
+        font-size: 1.3rem;
+        padding: 20px 27px;
+        padding-bottom: 8px;
+        color: #0a0202;
+      }
+      li a:hover {
+        background-color: #fcfffb;
+        border-radius: 6px;
+      }
+      .context {
+        content: '';
+        background: url("salmon-g8fbc6084d_1280.jpg") no-repeat center center;
+        background-size: cover;
+        height: 400px;
+        width: 100%;
+        color: rgb(12, 11, 11);
+        z-index: -4;
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        align-items: center;
+      }
+      .context h1 {
+        color: #2bdfc7;
+        text-align: center;
+        font-family: "Audiowide", sans-serif;
+        margin-top: 30px;
+      }
+      #para {
+        text-align: center;
+        font-family: "Audiowide", sans-serif;
+        font-size: 1.6rem;
+        margin-top: 18px;
+      }
+      .button {
+        
+        background-color: #1fe970;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        margin: auto;
+        cursor: pointer;
+        font-weight: 100;
+        width: 30px;
+        height: 20px;
+      }
+      #services {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        padding: 18px;
+        margin: 10px;
+      }
+      #servicecontainer h1 {
+        display: block;
+        text-align: center;
+        margin-top: 5px;
+      }
+
+      .box1 {
+        display: inline-block;
+        border: 1px solid#181b18;
+        border-radius: 19px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+          box-shadow: 3px 4px;
+          background-color: #fcfffb;
+
+        width: 480px;
+        height: 450px;
+        margin: 10px;
+      }
+      .box1 img {
+        display: block;
+        margin: auto;
+        height: 200px;
+        width: 200px;
+        align-items: center;
+      }
+      .box2 {
+        display: inline-block;
+        border: 1px solid#181b18;
+        border-radius: 19px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        width: 480px;
+        box-shadow: 3px 4px;
+        background-color: #fcfffb;
+        height: 450px;
+        margin: 10px;
+      }
+      .box2 img {
+        display: block;
+        margin: auto;
+        height: 200px;
+        width: 200px;
+        align-items: center;
+      }
+      .box3 {
+        display: inline-block;
+        border: 1px solid#181b18;
+        border-radius: 19px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+          box-shadow: 3px 4px;
+          background-color: #fcfffb;
+        width: 480px;
+        height: 450px;
+        margin: 10px;
+      }
+      .box3 img {
+        display: block;
+        margin: auto;
+        height: 200px;
+        width: 200px;
+        align-items: center;
+      }
+      .box1 h2 {
+        padding-top: 20px;
+        text-align: center;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      .box2 h2 {
+        padding-top: 20px;
+        text-align: center;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      .box3 h2 {
+        padding-top: 20px;
+        text-align: center;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      .box1 p {
+        text-align: center;
+        padding: 6px;
+      }
+      .box2 p {
+        text-align: center;
+        padding: 6px;
+      }
+      .box3 p {
+        text-align: center;
+        padding: 6px;
+      }
+
+      .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+      }
+      .icons {
+        padding-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .fa:hover {
+        opacity: 0.7;
+      }
+
+      .fa-facebook {
+        background: #3b5998;
+        color: white;
+      }
+
+      .fa-twitter {
+        background: #55acee;
+        color: white;
+      }
+
+      .fa-google {
+        background: #dd4b39;
+        color: white;
+      }
+
+      .fa-linkedin {
+        background: #007bb5;
+        color: white;
+      }
+
+      .fa-youtube {
+        background: #bb0000;
+        color: white;
+      }
+
+      .fa-instagram {
+        background: #125688;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="logo">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_D78Lzd1WvO6AcuucbPQrOMEnyLHI9JIsEHMH2MfvjA&s"
+        />
+      </div>
+
+      <ul>
+        <li>
+          <a href="">Home </a>
+        </li>
+        <li><a href=""> Items </a></li>
+        <li><a href=""> Hotels</a></li>
+        <li><a href=""> Locations </a></li>
+      </ul>
+    </nav>
+
+    <div class="context">
+      <h1>PICK YOUR CHOICE</h1>
+      <div id="para">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+          similique! Eligendi earum tenetur modi accusantium deleniti culpa
+          veritatis quibusdam itaque vitae aperiam. Maiores architecto
+          laboriosam autem ipsum! Minus, suscipit et?
+        </p>
+      </div>
+    </div>
+      <div>
+        <a href="#" class="button">ORDER NOW</a>
+      
+    </div>
+
+    <section id="servicecontainer">
+      <h1 class="primary services">OUR SERVICES</h1>
+      <div id="services">
+        <div class="box1">
+          <h2 class="h-secondary center">Food Catering</h2>
+          <img src="pizza1.png" alt="" />
+          <p class="center">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem,
+            culpa suscipit error Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Et qui, repudiandae similique nam, recusandae
+            quidem ab asperiores ex, aut fugit labore veritatis facere? sint
+            delectus ab dolorum nam. Debitis facere, incidunt voluptates eos,
+            mollitia voluptatem iste sunt voluptas beatae facilis labore, omnis
+            sint quae eum.
+          </p>
+        </div>
+        <div class="box2">
+          <h2 class="h-secondary center">Bulk ordering</h2>
+          <img src="dishes1.png" alt="" />
+          <p class="center">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem,
+            culpa suscipit error Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Et qui, repudiandae similique nam, recusandae
+            quidem ab asperiores ex, aut fugit labore veritatis facere? sint
+            delectus ab dolorum nam. Debitis facere, incidunt voluptates eos,
+            mollitia voluptatem iste sunt voluptas beatae facilis labore, omnis
+            sint quae eum.
+          </p>
+        </div>
+        <div class="box3">
+          <h2 class="h-secondary center">Online delivery</h2>
+          <img src="delivery.png" alt="" />
+          <p class="center">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem,
+            culpa suscipit error Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Et qui, repudiandae similique nam, recusandae
+            quidem ab asperiores ex, aut fugit labore veritatis facere? sint
+            delectus ab dolorum nam. Debitis facere, incidunt voluptates eos,
+            mollitia voluptatem iste sunt voluptas beatae facilis labore, omnis
+            sint quae eum.
+          </p>
+        </div>
+        
+      </div>
+    </section>
+    <div class="icons">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-google"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-youtube"></a>
+      <a href="#" class="fa fa-instagram"></a>
+    </div>
+  </body>
+</html>

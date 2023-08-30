@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+
+}
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.main img{
+    height: 600px;
+    position: relative;
+    
+    z-index: 99;
+}
+.scroll{
+   
+    top: 20%;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+.scroll::-webkit-scrollbar{
+    display: none;
+
+}
+.scroll h1{
+    font-size: 9vw;
+    display: inline-block;
+    font-family: monument;
+    margin-right: 30px;
+    letter-spacing: 6px;
+    animation-name: scroll;
+    animation-duration: 2s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+
+
+}
+.scroll-2{
+   
+    top: 40%;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    z-index: 100;
+    
+}
+.scroll-2::-webkit-scrollbar{
+    display: none;
+
+}
+.scroll-2 h1{
+    
+    font-size: 9vw;
+    display: inline-block;
+    font-family: monument;
+    margin-right: 30px;
+    letter-spacing: 6px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color: transparent;
+    animation-name: scroll;
+    animation-duration: 2s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+
+    
+    
+
+}
+.scroll-3{
+   
+    top: 60%;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+.scroll-3::-webkit-scrollbar{
+    display: none;
+
+}
+.scroll-3 h1{
+    font-size: 9vw;
+    display: inline-block;
+    font-family: monument;
+    margin-right: 30px;
+    letter-spacing: 6px;
+    animation-name: scroll;
+    animation-duration: 2s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+     animation-direction: reverse;
+
+}
+@keyframes scroll {
+    from{
+        transform: translateX(calc(-100% - 30px));
+
+    }
+    to{
+        transform: translateX(0);
+    }
+    
+}

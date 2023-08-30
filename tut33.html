@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <title>Before and after pseudo selector</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        color: white;
+       
+        
+      }
+      header::before{
+        background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.3;
+        content: "";
+      }
+      .navigation {
+        display: flex;
+        
+          font-size: 19px;
+        
+      }
+      li {
+        list-style: none;
+      }
+      .item {
+        padding: 14px;
+        align-items: center;
+      }
+      section {
+        
+        height: 300px;
+        justify-content: center;
+        margin: 3px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      section::before {
+        font-size: 20px;
+        content: "this is the content";
+      }
+      h1{
+        font-size: 4rem;
+      }
+      p{
+        text-align: center;
+         font-family: 'Ubuntu', sans-serif;
+      }
+     
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="navigation">
+          <li class="item">Home</li>
+          <li class="item">Solution</li>
+          <li class="item">Contact</li>
+          <li class="item">Faq</li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <h1>Welcome to the World of coding</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+        dolorum dignissimos, atque corporis nulla aliquam quisquam, quas velit
+        cupiditate impedit distinctio enim laborum nisi numquam deleniti
+        architecto voluptas pariatur eligendi repellendus natus sunt. Quod.
+      </p>
+    </section>
+    <hr>
+  </body>
+</html>

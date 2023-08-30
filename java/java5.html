@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+.container{
+    width: 500px;
+    height: 600px;
+    background-color: grey;
+}
+.screen{
+    display: flex;
+    justify-content: center;
+}
+
+#white{
+    width: 400px;
+    height: 70px;
+    pointer-events: none;
+    margin-top: 20px;
+    padding-top: 15px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.switches{
+    width: 65px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 39px;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="screen">
+            <input type="text" id="white">
+        </div>
+        <div class="box">
+       
+        <div class="btn">
+            <button onclick="buttonclick(7)" class="switches">7</button>
+            <button onclick="buttonclick('%')"class="switches">%</button>
+            <button onclick="buttonclick(9)" class="switches">9</button>
+            <button onclick="buttonclick('+')"class="switches">+</button>
+        </div>
+        <div class="btn">
+            <button onclick="buttonclick(6)" class="switches">6</button>
+            <button onclick="buttonclick(5)"class="switches">5</button>
+            <button onclick="buttonclick(4)"class="switches">4</button>
+            <button onclick="buttonclick('-')"class="switches">-</button>
+        </div>
+        <div class="btn">
+            <button onclick="buttonclick(1)" class="switches">1</button>
+            <button onclick="buttonclick(2)"class="switches">2</button>
+            <button onclick="buttonclick(3)"class="switches">3</button>
+            <button onclick="buttonclick('/')"class="switches">/</button>
+        </div>
+        <div class="btn">
+            <button onclick="buttonclick('.')" class="switches">1</button>
+            <button onclick="buttonclick(0)"class="switches">2</button>
+            <button onclick="equalclick('=')"class="switches">=</button>
+            <button onclick="cleardisplay() "class="switches">C</button>
+        </div>
+    </div>
+    
+</div>
+<script>
+    function buttonclick(val) {
+        
+        document.getElementById("white").value=document.getElementById("white").value+val
+    }
+    function cleardisplay() {
+        document.getElementById("white").value=('')
+    }
+    function equalclick() {
+        var text = document.getElementById("white").value
+        var result = eval(text)
+        document.getElementById("white").value = result
+
+    }
+</script>
+    
+    
+</body>
+</html>

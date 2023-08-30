@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth pseudo selector</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <style>
+        .container{
+            display: block;
+            width: 233px;
+            margin: auto;
+        }
+        input{
+            display: block;
+        }
+        input[type="text"]{
+            padding: 10px;
+            border: 2px solid blueviolet;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        
+        input[type="submit"]{
+            padding: 3px;
+            border: 2px solid rgb(55, 124, 76);
+        }
+        a[target]{
+            color: rgb(90, 161, 23);
+        }
+        li:nth-child(2n+0){
+            color: aqua;
+        }
+        li:nth-child(odd){
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">Go to google</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="enter your name">
+            <input type="password" placeholder="enter your password">
+            <input type="submit" placeholder="submit">
+        </form>
+        <ul>
+            <li class="item" id="item1">item-1</li>
+            <li class="item" id="item2">item-2</li>
+            <li class="item" id="item3">item-3</li>
+            <li class="item" id="item4">item-4</li>
+            <li class="item" id="item5">item-5</li>
+            <li class="item" id="item6">item-6</li>
+            <li class="item" id="item7">item-7</li>
+            <li class="item" id="item8">item-8</li>
+            <li class="item" id="item9">item-9</li>
+            <li class="item" id="item10">item-10</li>
+        </ul>
+        
+    </div>
+</body>
+</html>

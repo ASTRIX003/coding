@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      .container {
+        background-color: hotpink;
+      }
+      .box {
+        border: 2px solid yellowgreen;
+        background-color: aquamarine;
+        position: relative;
+        width: 200px;
+        height: 200px;
+        animation-name: varun;
+        animation-duration: 8s;
+        animation-iteration-count: 3;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+      }
+     @keyframes varun{
+        0%{
+top: 0px;
+left: 0px;
+        }
+        25%{
+            top: 250px;
+left: 0px;
+        }
+        50%{
+            top: 250px;
+left: 0px;
+        }
+        75%{top: 250px;
+left: 250px;
+
+        }
+        100%{
+            top: 0px;
+left: 250px;
+        }
+     }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">class</div>
+    </div>
+  </body>
+</html>

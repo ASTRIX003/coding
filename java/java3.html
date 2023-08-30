@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    #container{
+        width : 200px;
+        height : 290px;
+      border: 2px solid black;
+        background-color: aquamarine;
+    }
+  
+   </style>
+</head>
+<body>
+    <div id="container"></div> 
+    <button onclick="color ('red')">red</button>
+    <button onclick="color ('green')">green</button>
+    <button onclick="color ('yellow')">yellow</button>
+    <button onclick="color ('black')">black</button>
+    <script>
+        function color(col)
+       {
+        document.getElementById("container").style.background=col
+       }
+    </script>
+</body>
+</html>

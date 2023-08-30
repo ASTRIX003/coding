@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discord bot</title>
+    <style>
+        body{
+            
+           background-color: rgb(145, 236, 207);
+           
+          }
+          #navigation {
+            display: flex;
+           
+          }
+          #discordlogo img{
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            height: 74px;
+            width: 79px;
+          }
+          
+          #navigation ul {
+            display: flex;
+          }
+          #navigation ul li {
+            list-style: none;
+            text-decoration: none;
+            padding: 30px;
+            
+          }
+          #navigation ul li a {
+            font-size: 20px;
+
+            
+            color: white;
+        text-decoration: none;
+      }
+
+      
+      
+      .topbutton {
+        margin-top: 42px;
+        border-radius: 21px;
+
+        background-color: blueviolet;
+        margin-left: 252px;
+        height: 45px;
+        width: 99px;
+        border: none;
+        
+      }
+      .firstsection::before{
+        content: '';
+        background: url('amimleft.svg') left no-repeat;
+        position: absolute;
+        float: left;
+        padding-right: 20px;
+            opacity: 0.3;
+            top: 0px;
+            left: 0px;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+      }
+  
+      .secondsection::before{
+        content: '';
+        background: url('amimleft.svg') right no-repeat;
+        position: absolute;
+        padding-left: 250px;
+            opacity: 0.3;
+            top: 0px;
+            left: 0px;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+      }
+      
+      .secondsection::before{
+        content: '';
+        background: url('amimleft.svg') left no-repeat;
+        
+        background: url('anim.svg') right no-repeat;
+        position: absolute;
+        padding-left: 250px;
+            opacity: 0.3;
+            top: 0px;
+            left: 0px;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+      }
+      .firstsection{
+        display: block;
+        margin: auto;
+        flex-direction: column;
+      }
+      #first{
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 55px;
+        font-weight: 100; 
+      }
+      .first{
+        display: block;
+        margin: auto;
+        color: white;
+        align-items: center;
+        text-align: center;
+        height: 20px;
+        width: 750px;
+        font-size: 19px;
+        font-size: 25px;
+        
+      }
+      .centerbuttons{
+        display: flex;
+        justify-content: center;
+        margin-top: 90px;
+        padding: 40px;
+        
+        
+      }
+      #cntrlft{
+        background-color: white;
+        height: 60px;
+        width: 290px;
+        color: black;
+        border: none;
+        border-radius: 30px;
+        margin-right: 20px;
+        font-size: 20px;
+        
+        
+      }
+      #cntrrgt{background-color: white;
+        height: 60px;
+        width: 290px;
+        color: white;
+        background-color: black;
+        border: none;
+        border-radius: 30px;
+        font-size: 20px;
+        
+        
+      }
+      .secondsection{
+        display: flex;
+        padding: 120px 40px; 
+      }
+      .secondimg{
+        
+        
+}
+.secondcontent{
+
+}
+.secondcontent h2{
+font-size: 55px;
+font-weight: 100;
+}
+.secondcontent p{
+  font-size: 25px;
+  
+  
+
+}
+.section2{
+  display: flex;
+}
+.section2content{
+
+}
+.section2content h2{
+  font-size: 55px;
+font-weight: 100;
+}
+.section2content p{
+  font-size: 25px;
+}
+.section3{
+  display: flex;
+
+}
+.section3content{
+  padding: 30px;
+}
+.section3content h2{
+  font-size: 55px;
+  font-weight: 100;
+}
+.section3content p{
+  font-size: 25px;
+}
+.section4{
+  display: block;
+ 
+  margin: auto;
+}
+.section4content{
+  display: block;
+  justify-content: center;
+}
+.section4content h2{
+  text-align: center;
+  font-size: 55px;
+  font-weight: 100;
+
+
+}
+.section4content p{
+  text-align: center;
+  font-size: 25px;
+  padding: 20px 40px;
+}
+.section4img{
+  display: flex;
+  justify-content: center;
+}
+.section4 h3{
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.section4button{
+ display: block;
+ font-size: large;
+ margin: auto; 
+ border: none;
+ background-color: #4287f5;
+ border-radius: 40px;
+ height: 65px;
+ width: 270px;
+}
+.dropbtn {
+  background-color: #dfeaf1;
+  color: rgb(14, 13, 13);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+
+
+.section5{
+  display: flex;
+  align-content: flex-start;
+  padding: 55px;
+  list-style: none;
+  text-decoration: none;
+}
+.navbottom{
+  display: flex;
+  align-content: flex-start;
+  list-style: none;
+}
+.navbottom ul li a{
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <nav id="navigation">
+      <logo id="discordlogo"
+        ><img src="discord-mascot.png" alt="Discord"
+      /></logo>
+
+      <ul>
+        <li><a href="">Discord</a></li>
+        <li><a href="">Nitro</a></li>
+        <li><a href="">Discover</a></li>
+        <li><a href="">Safety</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Support</a></li>
+        <li><a href="">Careers</a></li>
+      </ul>
+
+      <button class="topbutton">OpenDiscord</button>
+    </nav>
+    <section class="firstsection">
+      <div><h1 id="first">IMAGINE A PLACE....</h1>
+      </div>
+      <div> <p class="first">...where you can belong to a school club, a gaming group, or a worldwide art community. Where just you and a handful of friends can spend time together. A place that makes it easy to talk every day and hang out more often.</p></div>
+      <div class="centerbuttons">
+        <button id="cntrlft">Download for Windows</button>
+        <button id="cntrrgt">Open Discord In your Browser</button>
+        
+      </div>
+      
+    </section>
+    <section class="secondsection">
+      <div class="secondimg">
+        <img src="anim3.svg" alt="">
+      </div>
+      <div class="secondcontent">
+        <h2>Create an invite only place where you belong</h2>
+        <p>Discord servers are organized into topic based channels where you can collaborate,shareand just talk about without clogging up agroup chat.</p>
+      </div>
+    </section>
+    <section class="section2">
+      <div class="section2content">
+        <h2>Where hanging out is easy</h2>
+        <p>Grab a seat in a voice channel when you’re free. Friends in your server can see you’re around and instantly pop in to talk without having to call.</p>
+      </div>
+      <div class="section2img">
+        <img src="section2img.svg" alt="">
+      </div>
+    </section>
+    <section class="section3">
+      <div class="section3img">
+        <img src="section3img.svg" alt="">
+      </div>
+      <div class="section3content">
+        <h2>From few to a fandom</h2>
+        <p>Get any community running with moderation tools and custom member access. Give members special powers, set up private channels, and more.</p>
+      </div>
+      
+      
+    </section>
+    <section class="section4">
+      <div class="section4content">
+        <h2>RELIABLE TECH FOR STAYING CLOSE</h2>
+        <P>
+          Low-latency voice and video feels like you’re in the same room. Wave hello over video, watch friends stream their games, or gather up and have a drawing session with screen share.
+        </P>
+      </div>
+      <div class="section4img">
+        <img src="section4img.svg" alt="">
+      </div>
+      <h3>Ready to start your journey?</h3>
+      <button class="section4button">Download fror Windows</button>
+    </section>
+    <section class="section5">
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Country</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <nav class="navbottom">
+        <ul>
+          <li>Prorduct
+            <ul>
+              <li><a href="">Download</a></li>
+              <li><a href="">Nitro</a></li>
+              <li><a href="">status</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+        <ul>
+          <li>Company
+            <ul>
+              <li><a href="">About</a></li>
+              <li><a href="">Brand</a></li>
+              <li><a href="">Jobs</a></li>
+              <li><a href="">Newshowroom</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li>Resources</li>
+          <ul>
+            <li><a href="">College</a></li>
+            <li><a href="">Support</a></li>
+            <li><a href="">Safety</a></li>
+            <li><a href="">Blog</a>/li>
+            <li><a href="">Feedback</a></li>
+          </ul>
+        </ul>
+        
+      </nav>
+      <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      </script>
+      
+     
+
+      </nav>
+    </section>
+  </body>
+</html>
